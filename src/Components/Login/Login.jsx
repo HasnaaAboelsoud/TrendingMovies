@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useFormik } from 'formik'
 import React from 'react'
 import { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { toast } from 'react-hot-toast'
 import { Link, useNavigate } from 'react-router-dom'
 import * as Yup from "yup"
@@ -40,6 +41,9 @@ export default function Login({saveUserData}) {
   }
   return (
     <div className='w-75 pb-5 mx-auto'> 
+      <Helmet>
+        <title>Login Page</title>
+      </Helmet>
       <h3>Login Now</h3>
       <form onSubmit={formik.handleSubmit}>
         {apiError?<div className='alert alert-danger'>{apiError}</div>:""}

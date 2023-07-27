@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Loading from '../Loading/Loading';
+import { Helmet } from 'react-helmet';
 
 export default function Tvshow() {
     const [tvs,setTvs]=useState([]);
@@ -23,6 +24,9 @@ export default function Tvshow() {
         GetTvs(1);
     },[])
     return (<div className='mt-3 mb-5 pb-5'>
+    <Helmet>
+        <title>TvShow Page</title>
+    </Helmet>
     {tvs && !loading?<div className="row gy-1">
         {tvs.map((item,index)=><div key={index} className='col-6 col-md-3'>
         <Link className='text-decoration-none text-white' to={`/mediaDetails/${item.id}/tv`}>

@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Loading from '../Loading/Loading';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 export default function Movies() {
   const [movies,setMovies]=useState([]);
@@ -23,6 +24,9 @@ export default function Movies() {
   },[])
 
   return (<div className='mt-3 mb-5 pb-5'>
+  <Helmet>
+        <title>Movies Page</title>
+    </Helmet>
     {movies && !loading?<div className="row gy-1">
         {movies.map((item,index)=><div key={index} className='col-6 col-md-3'>
         <Link className='text-decoration-none text-white' to={`/mediaDetails/${item.id}/movie`}>

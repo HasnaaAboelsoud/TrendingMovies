@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom'
 import Loading from '../Loading/Loading';
 import SimilarMedia from '../SimilarMedia/SimilarMedia';
+import { Helmet } from 'react-helmet';
 
 export default function MediaDetails() {
     const [details,setDetails]= useState({});
@@ -25,6 +26,9 @@ export default function MediaDetails() {
     },[id])
     return (
     <div>
+    <Helmet>
+        <title>{details.title} Details Page</title>
+    </Helmet>
     {!loading?<>
         <div className='row pb-5 mt-4'>
         <div className='col-md-4 col-lg-3'>
