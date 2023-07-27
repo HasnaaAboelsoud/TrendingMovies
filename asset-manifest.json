@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TrendingMovies/static/css/main.e768e9ed.css",
-    "main.js": "/TrendingMovies/static/js/main.64fe09b9.js",
+    "main.js": "/TrendingMovies/static/js/main.88f20daa.js",
     "static/js/787.7f320c1d.chunk.js": "/TrendingMovies/static/js/787.7f320c1d.chunk.js",
     "static/media/fa-solid-900.ttf": "/TrendingMovies/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/TrendingMovies/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/TrendingMovies/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/TrendingMovies/index.html",
     "main.e768e9ed.css.map": "/TrendingMovies/static/css/main.e768e9ed.css.map",
-    "main.64fe09b9.js.map": "/TrendingMovies/static/js/main.64fe09b9.js.map",
+    "main.88f20daa.js.map": "/TrendingMovies/static/js/main.88f20daa.js.map",
     "787.7f320c1d.chunk.js.map": "/TrendingMovies/static/js/787.7f320c1d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e768e9ed.css",
-    "static/js/main.64fe09b9.js"
+    "static/js/main.88f20daa.js"
   ]
 }
