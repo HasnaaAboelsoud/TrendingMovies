@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 import Movies from './Components/Movies/Movies';
@@ -29,7 +29,7 @@ function App() {
       saveUserData();
     }
   },[])
-  let routers = createBrowserRouter([
+  let routers = createHashRouter([
     { path: "", element: <Layout UserData={UserData} setUserData={setUserData}/> , children: [
       {index:true , element:<Home/>},
       {path:"/movies" , element:<ProtectedRoute><Movies/></ProtectedRoute>},
